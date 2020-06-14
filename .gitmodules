@@ -1,0 +1,6 @@
+[submodule "Periscope.Demo/Periscope"]
+	path = Periscope.Demo/Periscope
+	url = https://github.com/zspitz/Periscope.git
+[submodule "Periscope.Demo/Periscope.Debuggee"]
+	path = Periscope.Demo/Periscope.Debuggee
+	url = https://github.com/zspitz/Periscope.Debuggee.git
