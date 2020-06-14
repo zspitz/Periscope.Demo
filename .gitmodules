@@ -1,6 +1,6 @@
-[submodule "Periscope.Demo/Periscope"]
-	path = Periscope.Demo/Periscope
+[submodule "RandomVisualizer/Periscope"]
+	path = RandomVisualizer/Periscope
 	url = https://github.com/zspitz/Periscope.git
-[submodule "Periscope.Demo/Periscope.Debuggee"]
-	path = Periscope.Demo/Periscope.Debuggee
+[submodule "RandomVisualizer.Debuggee/Periscope.Debuggee"]
+	path = RandomVisualizer.Debuggee/Periscope.Debuggee
 	url = https://github.com/zspitz/Periscope.Debuggee.git
