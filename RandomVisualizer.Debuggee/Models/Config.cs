@@ -1,7 +1,7 @@
 ﻿using Periscope.Debuggee;
 using System;
 
-namespace Periscope.Demo {
+namespace RandomVisualizer.Debuggee {
     [Serializable]
     public class Config : ConfigBase<Config> {
         public int NextNumbers { get; set; }

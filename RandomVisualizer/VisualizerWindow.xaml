@@ -1,7 +1,7 @@
-﻿<my:VisualizerWindowBase x:Class="Periscope.Demo.VisualizerWindow"
+﻿<my:VisualizerWindowBase x:Class="RandomVisualizer.VisualizerWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
-        xmlns:my="clr-namespace:Periscope.Demo">
+        xmlns:my="clr-namespace:RandomVisualizer">
     <DataGrid ItemsSource="{Binding Numbers}" AutoGenerateColumns="true" />
     <my:VisualizerWindowBase.OptionsPopup>
         <TextBox Text="{Binding NextNumbers}" />

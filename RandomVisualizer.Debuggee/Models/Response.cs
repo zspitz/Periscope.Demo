@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Periscope.Demo {
+namespace RandomVisualizer.Debuggee {
     [Serializable]
     public class Response {
         public Response(Random rnd, Config config) {

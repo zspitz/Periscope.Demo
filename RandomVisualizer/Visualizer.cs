@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Periscope;
+using RandomVisualizer.Debuggee;
+using System;
 using System.Windows.Input;
 
-namespace Periscope.Demo {
+namespace RandomVisualizer {
     public abstract class VisualizerWindowBase : VisualizerWindowBase<VisualizerWindow, Config> {
         protected override (object windowContext, object optionsContext, Config config) GetViewState(object r, ICommand? OpenInNewWindow) {
             var response = (Response)r;

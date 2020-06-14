@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Periscope.Demo", "Periscope
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomVisualizer", "RandomVisualizer\RandomVisualizer.csproj", "{D3F019FF-ABCB-4FF9-9FEA-A0C48ED10087}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomVisualizer.Debuggee", "RandomVisualizer.Debuggee\RandomVisualizer.Debuggee.csproj", "{14CF19B5-C55D-4E78-96FC-A4C292CEDF01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D3F019FF-ABCB-4FF9-9FEA-A0C48ED10087}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3F019FF-ABCB-4FF9-9FEA-A0C48ED10087}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3F019FF-ABCB-4FF9-9FEA-A0C48ED10087}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14CF19B5-C55D-4E78-96FC-A4C292CEDF01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14CF19B5-C55D-4E78-96FC-A4C292CEDF01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14CF19B5-C55D-4E78-96FC-A4C292CEDF01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14CF19B5-C55D-4E78-96FC-A4C292CEDF01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

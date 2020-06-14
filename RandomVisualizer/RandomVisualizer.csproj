@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
   <PropertyGroup>
     <TargetFrameworks>net472</TargetFrameworks>
@@ -11,6 +11,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="ZSpitz.Util.Wpf" Version="0.0.27" />
+    <ProjectReference Include="..\RandomVisualizer.Debuggee\RandomVisualizer.Debuggee.csproj" />
     <Reference Include="Microsoft.VisualStudio.DebuggerVisualizers">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.DebuggerVisualizers.dll</HintPath>
       <Private>false</Private>
