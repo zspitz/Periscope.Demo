@@ -1,16 +1,14 @@
-﻿using Periscope;
+﻿using RandomVisualizer;
 using RandomVisualizer.Debuggee;
 using System;
-using System.Windows.Input;
+using System.Diagnostics;
+
+[assembly: DebuggerVisualizer(
+    visualizer: typeof(Visualizer),
+    visualizerObjectSource: typeof(VisualizerObjectSource),
+    Target = typeof(Random),
+    Description = "Random visualizer")]
 
 namespace RandomVisualizer {
-    public abstract class VisualizerWindowBase : VisualizerWindowBase<VisualizerWindow, Config> {
-        protected override (object windowContext, object optionsContext, Config config) GetViewState(object r, ICommand? OpenInNewWindow) {
-            var response = (Response)r;
-            return (response, response.Config, response.Config);
-        }
-
-        // we don't need this unless we're allowing OpenInNewWindow
-        protected override void TransformConfig(Config config, object parameter) => throw new NotImplementedException();
-    }
+    public class Visualizer : Periscope.VisualizerBase<VisualizerWindow, Config> { }
 }
