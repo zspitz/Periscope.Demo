@@ -2,8 +2,16 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
         xmlns:my="clr-namespace:RandomVisualizer">
-    <DataGrid ItemsSource="{Binding Numbers}" AutoGenerateColumns="true" />
+    <DataGrid ItemsSource="{Binding Numbers}">
+        <DataGrid.Columns>
+            <DataGridTextColumn Binding="{Binding}" Header="Number" />
+        </DataGrid.Columns>
+    </DataGrid>
     <my:VisualizerWindowBase.OptionsPopup>
-        <TextBox Text="{Binding NextNumbers}" />
+        <DockPanel>
+            <Label Content="Next numbers:" />
+            <TextBox Text="{Binding NextNumbers}" />
+        </DockPanel>
+        
     </my:VisualizerWindowBase.OptionsPopup>
 </my:VisualizerWindowBase>
