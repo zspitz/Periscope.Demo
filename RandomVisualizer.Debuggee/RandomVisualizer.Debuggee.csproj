@@ -26,4 +26,10 @@
     </Reference>
   </ItemGroup>
 
+  <Target Name="CopyPackageAssembliesToSubFolder" AfterTargets="ResolveReferences">
+    <ItemGroup>
+      <ReferenceCopyLocalPaths Condition=" '%(ReferenceCopyLocalPaths.NuGetPackageId)' != '' " Update="%(ReferenceCopyLocalPaths)" DestinationSubDirectory="RandomVisualizer\" />
+    </ItemGroup>
+  </Target>
+
 </Project>

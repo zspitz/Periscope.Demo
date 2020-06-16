@@ -1,4 +1,5 @@
-﻿using RandomVisualizer;
+﻿using Periscope.Debuggee;
+using RandomVisualizer;
 using RandomVisualizer.Debuggee;
 using System;
 using System.Diagnostics;
@@ -10,5 +11,7 @@ using System.Diagnostics;
     Description = "Random visualizer")]
 
 namespace RandomVisualizer {
-    public class Visualizer : Periscope.VisualizerBase<VisualizerWindow, Config> { }
+    public class Visualizer : Periscope.VisualizerBase<VisualizerWindow, Config> {
+        static Visualizer() => SubfolderAssemblyResolver.Hook("RandomVisualizer"); 
+    }
 }

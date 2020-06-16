@@ -21,4 +21,10 @@
     <PackageReference Include="Octokit" Version="0.48.0" />
   </ItemGroup>
 
+  <Target Name="CopyPackageAssembliesToSubFolder" AfterTargets="ResolveReferences">
+    <ItemGroup>
+      <ReferenceCopyLocalPaths Condition=" '%(ReferenceCopyLocalPaths.NuGetPackageId)' != '' " Update="%(ReferenceCopyLocalPaths)" DestinationSubDirectory="RandomVisualizer\" />
+    </ItemGroup>
+  </Target>
+
 </Project>
